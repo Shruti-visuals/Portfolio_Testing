@@ -1,0 +1,501 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100vh;
+      overflow-x: hidden; /* disables horizontal scrolling */
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      background-color: #000;
+    }
+
+    .containerA {
+      width: 1440px;
+      height: 5177px;
+      background-color: #000;
+      position: relative;
+    }
+
+    .group1 {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  display: flex;
+  gap: 20px;
+  z-index: 10;
+}
+
+.group2 {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  display: flex;
+  gap: 20px;
+  z-index: 10;
+ margin-top: 00px; /* Adjust value as needed */
+
+}
+
+.group1 img {
+  width: 98px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-top: 10px; /* Adjust value as needed */
+
+}
+
+.group2 img {
+  width: 175px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+margin-top: 10px; /* Adjust value as needed */
+}
+
+.groupx img {
+  width: 140px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-top: 5px; /* Adjust value as needed */
+
+}
+
+.group1 img:hover {
+  transform: scale(1.1);
+}
+
+.group2 img:hover {
+  transform: scale(1.1);
+}
+
+	.text-container {
+	  margin-top: 200px;
+	  margin-bottom: 20px;
+	  margin-left: 200px;
+	  margin-right: 20px;
+
+	  padding: 15px;
+	  background-color: #000000;
+	  
+	  font-size: 16px;
+	  width: fit-content;
+	}
+	.blinking {
+	  margin-top: 200px;
+	  margin-bottom: 20px;
+	  margin-left: 120px;
+	  margin-right: 20px;
+
+	  padding: 15px;
+	  background-color: #000000;
+	  height: 298px;
+	  font-size: 16px;
+	  width: 658px;
+	}
+	.Contact-button {
+	  margin-top: 50px;      /* 50px gap from the text container */
+	  margin-bottom: 20px;
+	  margin-left: 220px;
+	  margin-right: 20px;
+
+	  padding: 10px 20px;
+	  font-size: 16px;
+	  cursor: pointer;
+	  background-color: #4CAF50;
+	  color: white;
+	  border: none;
+	  border-radius: 4px;
+	}
+	.svg-image {
+	  margin: 220px;
+	  width: 312px;  /* or whatever size you want */
+	  height: 363px;
+	  margin-top: -365px;      /* 50px gap from the text container */
+	  margin-bottom: 20px;
+	  margin-left: 900px;
+	  margin-right: 20px;	  
+	}
+	.png-image-2 {
+	  margin: 20px;
+	  width: 312px;  /* or whatever size you want */
+	  height: 363px;
+	  margin-top: -252px;      /* 50px gap from the text container */
+	  margin-bottom: 20px;
+	  margin-left: 1015px;
+	  margin-right: 20px;
+	}
+.parent-container {
+    position: relative; /* Ensure this parent is positioned */
+}
+.tools-bar {
+  position: relative;
+}
+
+.tools-bar-bg {
+  width: 100%;
+  display: block;
+}
+
+.tools-container {
+  position: absolute;
+  top: 100px; /* adjust this based on where you want them over the background */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tool-icon {
+  width:100px;
+  height: 100px;
+  padding: 5px;
+  background-color: transparent; /* or white if you need contrast */
+  border: 0px solid #fff;
+  border-radius: 12px;
+}
+
+
+.slider {
+  width: 1350px;
+  height: 400px;
+  overflow: hidden;
+  margin: 50px auto 0 auto; /* Top margin of 50px */
+  position: relative;
+  border: 2px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+
+.scroll-wrapper {
+  display: flex;
+  width: calc(1350px * 5 / 3); /* Enough width to hold 5 items in a 3-view layout */
+  animation: slideScroll 20s linear infinite;
+}
+
+.portfolio-scroll {
+  margin-top: 100px; /* Adjust value as per your need */
+}
+
+.image-box {
+  width: 450px; /* 1350px / 3 */
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #000000;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+}
+
+.image-box img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.textcontainer2 h1 {
+  color: white;       /* Solid white */
+  font-weight: bold;  /* Bold font */
+ text-align: center;
+}
+
+
+
+h1 {
+    font-size: 3rem;
+    color: #333;
+    margin: 0;
+}
+
+.photo {
+  display: flex;
+  justify-content: space-between; /* pushes items to left and right ends */
+  align-items: center;            /* vertically centers if needed */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 50px; /* left-right padding inside the container */
+}
+
+.left-photo,
+.right-photo {
+  width: 150px;
+  height: auto;
+}
+
+.left-photo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 85px;
+  height:676px;
+  width:520px;
+}
+
+.right-photo {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  height:500px;
+  width:400px;
+}
+
+	
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-template-rows: repeat(3, auto); /* Three rows */
+  gap: 50px; /* Space between cards */
+  padding: 200px; /* Optional padding around grid */
+  
+}
+
+.project-card {
+  position: relative;
+  height: 344px; /* Fixed height for each card */
+  width: 500px; /* Full width of grid column */
+  overflow: hidden;
+  
+}
+
+.project-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 340px); /* 4 columns of 340px each */
+  grid-template-rows: 400px; /* Single row, 400px tall */
+  gap: 15px; /* (1405 - (340×4)) / 3 gaps = 15px spacing */
+  width: 1405px; /* Total section width */
+  height: 400px; /* Total section height */
+  margin: 0 auto; /* Center the grid if needed */
+  padding: 0; /* No padding to maintain exact dimensions */
+  
+}
+.service-item {
+  width: 100%;
+  height: 100%;
+}
+
+.service-container {
+  width: 340px; /* Fixed container width */
+  height: 400px; /* Fixed container height */
+ margin-top: 280px;
+  border-radius: 8px; /* Optional */
+  overflow: hidden; /* Keeps PNGs contained */
+}
+
+/* Optional: Hover effect for interactivity */
+.service-container:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+
+@keyframes slideScroll {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(0); }
+  25% { transform: translateX(-470px); }
+  45% { transform: translateX(-470px); }
+  50% { transform: translateX(-940px); }
+  70% { transform: translateX(-940px); }
+  75% { transform: translateX(-1410px); }
+  95% { transform: translateX(-1410px); }
+  100% { transform: translateX(0); }
+}
+
+
+
+.contact-btn {
+  background-color: #000000;
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  margin-top: -150px;
+  margin-bottom: 160px;  
+  margin-left: 141px;
+  margin-right: 30px;
+  
+  /* Subtle glowing border */
+  box-shadow: 0 0 3px 3px rgba(127, 90, 240, 0.4);
+}
+
+.contact-btn2 {
+  background-color: #000000;
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  margin-top: -150px;
+  margin-bottom: 160px;  
+  margin-left: 141px;
+  margin-right: 30px;
+  
+  /* Subtle glowing border */
+  box-shadow: 0 0 3px 3px rgba(127, 90, 240, 0.4);
+}
+
+
+    .contact-btn svg {
+      width: 18px;
+      height: 18px;
+      stroke-width: 2;
+      transition: all 0.3s ease;
+    }
+
+    .contact-btn .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 9px;
+    }
+
+    .contact-btn .icon svg circle {
+      fill: none;
+      stroke: white;
+      transition: fill 0.3s ease;
+    }
+
+    .contact-btn .icon svg path {
+      transition: transform 0.3s ease;
+    }
+
+    .contact-btn:hover {
+      background-color: #7f5af0;
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #7f5af0, 0 0 20px #7f5af0;
+    }
+
+    .contact-btn:hover .icon svg circle {
+      fill: #7f5af0;
+    }
+
+    .contact-btn:hover .icon svg path {
+      transform: translateX(30px);
+    }
+.text-container-f {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 0;       /* Adjust as needed */
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.divider {
+  height: 1px;
+  width: 1000px;
+  background-color: grey;
+  margin: 20px auto;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.left-logo {
+  text-align: left;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.center-text {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.right-logo {
+  text-align: right;
+  color: white;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.Location-svg {
+  text-align: left;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.Location-svg img {
+  filter: brightness(0) invert(1); /* makes SVG white on black bg */
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 200px;
+  right: 0;
+}
+
+.footer {
+  position: relative;        /* It stays in the document flow */
+  margin-top: 500px;          /* Pushes footer to the bottom if flex is used */
+  padding: 40px;
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;  /* <<< Adjusts footer to be 50px above bottom */
+}
